@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+
+
+        const drinks = new Array('Agua', 'Cacaolat', 'Jagger')
+
+
+
+
+        Array.prototype.showLastElement = function () {
+            console.log('ESTE ES EL LTIMO ELEMENTO ->', this[this.length - 1])
+        }
+
+        drinks.showLastElement()
+
+
+
+
+        Array.prototype.push = function (newElement) {
+            console.log('ASI QUE QUIERES METER ESTO EH EJEJE', newElement)
+            console.log('PUES AHORA TE QUITO EL PRIMERO LOL')
+            this.pop()
+        }
+
+        drinks.push('zumo')
+
+        console.log(drinks)
+
+    </script>
+</body>
+
+</html>

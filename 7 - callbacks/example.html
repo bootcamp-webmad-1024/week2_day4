@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        // Example 1
+        function eatDinner(functionToExecute) {
+            console.log('Eating the dinner!')
+            functionToExecute()
+        }
+
+        function eatDessert() {
+            console.log('Eating the dessert!')
+        }
+
+        function goToBed() {
+            console.log('ZZZZZZ')
+        }
+
+        eatDinner(eatDessert)
+        eatDinner(goToBed)
+
+        // Eating the dinner!
+        // Eating the dessert!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Callback example 2
+        function applyNormalVAT(subtotal) {
+            console.log('El precio final es de', subtotal * 1.21, '(IVA regular)')
+        }
+        function applyReducedVAT(subtotal) {
+            console.log('El precio final es de', subtotal * 1.1, '(IVA reducido)')
+        }
+        function applyExentVAT(subtotal) {
+            console.log('El precio final es de', subtotal * 1, '(IVA exento)')
+        }
+
+
+        function getTotal(cost, taxFunction) {
+            const subtotal = cost * 1.25
+            taxFunction(subtotal)
+        }
+
+
+        getTotal(1000, applyNormalVAT)
+        getTotal(1000, applyExentVAT)
+        getTotal(1000, applyReducedVAT)
+
+
+    </script>
+</body>
+
+</html>

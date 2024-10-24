@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        const people = [
+            { name: 'Tammy', age: 40 },
+            { name: 'Candice', age: 20 }
+        ]
+
+        const peopleCopy = [...people]    // Esto NO copia las referencias internas, que son objetos D:
+
+        peopleCopy[1].age = 99
+
+        console.log(people)
+        console.log(peopleCopy)
+
+    </script>
+</body>
+
+</html>

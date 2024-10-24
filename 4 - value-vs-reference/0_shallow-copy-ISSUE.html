@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+
+        const drinks = ['Agua', 'Cocaola', 'Jagger']
+        const drinksCopy = drinks
+
+        drinksCopy.pop()            // Esto NO es una copia sino una referencia
+
+        console.log('ORIGINAL ->', drinks)
+        console.log('COPIA FAKE ->', drinksCopy)
+
+
+
+
+
+
+        const person = { name: 'Candice', age: 16 }
+        const objectCopy = person
+
+        objectCopy.age = 87            // Esto NO es una copia sino una referencia
+
+        console.log('ORIGINAL ->', person)
+        console.log('COPIA FAKE ->', objectCopy)
+
+
+
+
+    </script>
+</body>
+
+</html>

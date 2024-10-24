@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+
+        const drinks = ['Agua', 'Cocaola', 'Jagger']
+        const drinksCopy = [...drinks]
+
+        drinksCopy.pop()
+
+        console.log('ORIGINAL ->', drinks)
+        console.log('COPIA REAL ->', drinksCopy)
+
+
+
+
+
+
+        const student = { name: 'Tammy', age: 33 }
+        const studenCopy = { ...student }
+
+        studenCopy.age = 59
+
+        console.log('ORIGINAL ->', student)
+        console.log('COPIA REAL ->', studenCopy)
+
+    </script>
+</body>
+
+</html>
